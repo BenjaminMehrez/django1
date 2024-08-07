@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+
+<body>
+
+    {% extends 'layouts/base.html' %}
+
+    {% block content %}
+
+    {% load static %}
+    <section class="section-projects">
+
+        <h1 class="title">Projects</h1>
+
+        <div class="cards">
+            {% for project in projects %}
+            
+            <div class="card">
+                <img src="{% static 'web.png' %}" alt="img">
+                <div class="card-2">
+                    <h1 class="title-card">{{project.name}}</h1>
+                    <a class="button-card" href="{% url 'project_detail' project.id %}">Detail</a>
+                </div>
+            </div>
+    
+            {% endfor %}
+        </div>
+
+    </section>
+
+
+    {% endblock %}
+
+</body>
+
+</html>

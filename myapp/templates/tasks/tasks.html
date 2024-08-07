@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+</head>
+
+<body>
+
+    {% extends 'layouts/base.html' %}
+
+    {% block content %}
+    
+    
+    <section class="section-detail">
+        
+        <h1 class="title">Tasks</h1>
+
+        <div class="cards-detail">
+            {% for task in tasks %}
+            <div class="card-detail">   
+                <h1>{% if task.done == False %} 🕚 {% else %} ✅ {% endif %} {{task.title}}</h1>
+                {% if task.done == False %}
+                <p>Tarea pendiente</p>
+                {% else %}
+                <p>Tarea realizada</p>
+                {% endif %}
+                <p>Description: {{task.description}}</p>
+                <p>Project: {{task.project.name}}</p>
+                <button>Delete</button>
+                <button>✅ Done</button>
+            </div>
+
+            {% endfor %}
+        </div>
+
+
+    </section>
+
+    {% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+/* --------  HEADER ----------*/
+
+header{
+    background-color: #888;
+}
+
+.nav{
+    display: flex;
+    height: 70px;
+}
+
+
+.nav-list{
+    display: flex;
+    width: clamp(600px,80dvw,1200px);
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: auto;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+
+.nav-list a:hover{
+    text-decoration: underline;
+}
+
+
+/*---------- PROJECTS -------- */
+
+.section-projects{
+    height: 100dvh;
+    margin-bottom: 150px;
+}
+
+.title{
+    font-size: 2rem;
+    padding-top: 100px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.card{
+    width: 350px;
+    height: 320px;
+    border: 1px solid ;
+}
+
+.card img{
+    width: 100%;
+}
+
+.title-card{
+    padding-bottom: 20px;
+}
+
+.card-2{
+    padding: 20px;
+}
+
+.button-card{
+    padding: 8px 30px;
+    background-color: #222;
+    color: #fff;
+    border: 0;
+    text-decoration: none;
+}
+
+.button-card:hover{
+    background-color: #fff;
+    color: #222;
+    border: 1px solid;
+}
+
+
+/* -------- DETAIL PROJECT --------- */
+
+.section-detail{
+    height: 100dvh;
+    margin-bottom: 150px;
+}
+
+.title-detail{
+    font-size: 2rem;
+    padding-top: 100px;
+}
+
+.cards-detail{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+
+
+.card-detail{
+    width: 400px;
+    height: 150px;
+    border: 1px solid;
+    padding: 20px;
+}
+
+/* --------- TASKS --------- */
+
+
+
