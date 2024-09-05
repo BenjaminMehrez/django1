@@ -64,3 +64,4 @@ def project_detail(req, id):
         'product': product,
         'tasks': tasks
     })
+
